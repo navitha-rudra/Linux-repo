@@ -87,3 +87,28 @@ The Linux file system is organized as a **single tree** starting from the root d
 - Everything — files, directories, devices — is a file
 - Knowing what each directory is used for helps in system administration
 
+## Easy Understanding
+
+```
+                Software / Tool / Package
+                        |
+        -------------------------------------
+        |                                   |
+     Binaries                           Libraries
+        |                                   |
+   -----------------                      /lib
+   |               |
+ Admin         Non-Admin
+ (/sbin)         (/bin)
+   |               |
+   -----------------------------------------------
+                        |
+            User (Parent Directory)
+                        |
+                       /|\
+       ---------------------------------------------
+       |                      |                   |
+   /usr/sbin             /usr/bin             /usr/lib
+```
+
+
